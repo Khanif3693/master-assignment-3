@@ -58,6 +58,23 @@ TYPE stackListTop(struct cirListDeque* q);
 
 You should fill out the skeleton functions in `cirListDeque.c` so they respectively implement a queue and a stack.  You can test your code using the provided `testADT.c`.
 
+## Grading criteria
+
+Your assignment will be graded by compiling it on `flip.engr.oregonstate.edu` using the provided `Makefile`, so make sure you have tested your work under those conditions.  If you currently don't have access to `flip`, you should be able to create an ENGR account at https://teach.engr.oregonstate.edu/ (follow the link that says "Create a new account").
+
+Some other requirements:
+* You may not change the function signatures (i.e. `void foo(int k)``).
+* You may not add or remove files.
+
+The assignment is worth 100 points total.
+
+* Part I: 60 points
+  * 30 points: correctly implements `listInsertionSort()`
+  * 30 points: correctly implements `reverseList()`
+* Part II: 40 points
+  * 20 points: correctly implements stack interface to deque
+  * 20 points: correctly implements queue interface to deque
+
 ## Submission
 
 We'll be using GitHub Classroom for this assignment. You will submit your assignment via GitHub. Just make sure your completed files are committed and pushed by the assignment's deadline to the master branch of the GitHub repo that was created for you by GitHub Classroom. A good way to check whether your files are safely submitted is to look at your assignment repo on the github.com (i.e. github.com/OSU-CS261-F16/assignment-3-YourGitHubUsername). If your changes show up there, you can consider your files submitted.
