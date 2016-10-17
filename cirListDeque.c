@@ -227,7 +227,6 @@ void printCirListDeque(struct cirListDeque* q) {
 }
 
 
-
 /***************************************************************
  * Queue built using a circular list-based deque.
  *
@@ -235,6 +234,7 @@ void printCirListDeque(struct cirListDeque* q) {
  ***************************************************************/
 
 void queueListEnqueue(struct cirListDeque* q, TYPE item) {
+    _addLinkAfter(q, q->Sentinel->prev, item);
   /*
    * This function should implement a queue enqueue using the circular
    * list-based deque q as the underlying data structure.
@@ -242,6 +242,8 @@ void queueListEnqueue(struct cirListDeque* q, TYPE item) {
 }
 
 TYPE queueListDequeue(struct cirListDeque* q) {
+
+     void removeFrontCirListDeque (struct cirListDeque* q);
   /*
    * This function should implement a queue dequeue using the circular
    * list-based deque q as the underlying data structure.  It should return
@@ -251,6 +253,8 @@ TYPE queueListDequeue(struct cirListDeque* q) {
 }
 
 TYPE queueListFront(struct cirListDeque* q) {
+
+    TYPE frontCirListDeque(struct cirListDeque* q);
   /*
    * This function should return the front element (i.e. the first to be
    * dequeued) of the queue represented by the circular list-based deque q.
@@ -265,6 +269,8 @@ TYPE queueListFront(struct cirListDeque* q) {
  * You should implement this interface.
  ***************************************************************/
 void stackListPush(struct cirListDeque* q,TYPE item) {
+_addLinkAfter(q, q->Sentinel->prev, item);
+
   /*
    * This function should implement a stack push using the circular
    * list-based deque q as the underlying data structure.
@@ -272,6 +278,10 @@ void stackListPush(struct cirListDeque* q,TYPE item) {
 }
 
 TYPE stackListPop(struct cirListDeque* q) {
+
+
+    void removeBackCirListDeque(struct cirListDeque* q);
+
   /*
    * This function should implement a stack pop using the circular
    * list-based deque q as the underlying data structure.  It should return
@@ -281,6 +291,9 @@ TYPE stackListPop(struct cirListDeque* q) {
 }
 
 TYPE stackListTop(struct cirListDeque* q) {
+
+
+    TYPE backCirListDeque(struct cirListDeque* q);
   /*
    * This function should return the top element of the stack represented by
    * the circular list-based deque q.
