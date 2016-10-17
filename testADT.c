@@ -2,6 +2,8 @@
 #include <assert.h>
 #include "cirListDeque.h"
 
+#include "cirListDeque.c"
+
 #define NUM_TEST_VALUES 16
 
 int main() {
