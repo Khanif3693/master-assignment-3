@@ -8,7 +8,7 @@
 # define TYPE_SENTINEL_VALUE DBL_MAX
 
 
-/* ************************************************************************
+/* ***********************************************************************
     Deque ADT based on Circularly-Doubly-Linked List WITH Sentinel
     ************************************************************************ */
 
@@ -46,6 +46,7 @@ struct cirListDeque* createCirListDeque() {
   _initCirListDeque(newCL);
   return(newCL);
 }
+
 
 
 /* Create a link for a value.
