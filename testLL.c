@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <assert.h>
 #include <float.h>
-
+#include "linkedList.c"
 #include "linkedList.h"
 
 struct Link* buildLink(int n, int rev, int mod) {
